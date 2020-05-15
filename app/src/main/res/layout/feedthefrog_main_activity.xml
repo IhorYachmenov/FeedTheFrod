@@ -1,0 +1,360 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorPrimaryDark"
+    tools:context=".FeedTheFrogMainActivity">
+
+
+    <ImageView
+        android:id="@+id/table"
+        android:layout_width="420dp"
+        android:layout_height="320dp"
+        android:src="@drawable/table_picture"
+        android:text="Hello World!"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <ImageView
+        android:id="@+id/plate"
+        android:layout_width="173.8dp"
+        android:layout_height="70.7dp"
+        android:src="@drawable/ic_plate"
+        android:text="Hello World!"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.755"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.38" />
+
+    <ImageView
+        android:id="@+id/stackOfFruit"
+        android:layout_width="173.8dp"
+        android:layout_height="70.7dp"
+        android:src="@drawable/stack_fruit"
+        android:text="Hello World!"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.831"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.362" />
+
+    <ImageView
+        android:id="@+id/frog"
+        android:layout_width="186.98dp"
+        android:layout_height="228.97dp"
+        android:src="@drawable/ic_frog"
+        android:text="Hello World!"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.227"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+
+    <ImageView
+        android:id="@+id/orange_button"
+        android:layout_width="50dp"
+        android:visibility="invisible"
+        android:layout_height="50dp"
+        android:layout_marginStart="16dp"
+        android:src="@drawable/orange_button"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@id/strawberry_button"
+        app:layout_constraintStart_toEndOf="@id/watermelon_button"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.926" />
+
+    <ImageView
+        android:id="@+id/watermelon_button"
+        android:layout_width="50dp"
+        android:visibility="invisible"
+        android:layout_height="50dp"
+        android:layout_marginStart="16dp"
+        android:src="@drawable/watermellow_button"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@id/orange_button"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.926" />
+
+    <ImageView
+        android:id="@+id/strawberry_button"
+        android:layout_width="50dp"
+        android:visibility="invisible"
+        android:layout_height="50dp"
+        android:src="@drawable/strawberry_button"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/orange_button"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.926" />
+
+    <ImageView
+        android:id="@+id/menu_lose"
+        android:visibility="invisible"
+        android:layout_width="218dp"
+        android:layout_height="52.22dp"
+        android:src="@drawable/ic_buttonmenu"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.893" />
+
+    <ImageView
+        android:id="@+id/play_main_button"
+
+        android:layout_width="218dp"
+        android:layout_height="52.22dp"
+        android:src="@drawable/ic_buttonmenu"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.893" />
+
+
+
+    <ImageView
+        android:id="@+id/button_play"
+        android:layout_width="218dp"
+        android:layout_height="52.22dp"
+        android:src="@drawable/ic_buttonplay"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:visibility="invisible"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageView
+        android:id="@+id/button_resume_pause"
+        android:layout_width="218dp"
+        android:visibility="invisible"
+        android:layout_height="52.22dp"
+        android:src="@drawable/ic_buttonresume"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageView
+        android:id="@+id/button_menu_pause"
+        android:layout_width="218dp"
+        android:layout_height="52.22dp"
+        android:src="@drawable/ic_buttonmenu"
+        android:visibility="invisible"
+        app:layout_constraintBottom_toTopOf="@+id/button_resume_pause"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.937" />
+
+    <ImageView
+        android:id="@+id/music_button"
+        android:layout_width="42dp"
+        android:visibility="invisible"
+        android:layout_height="42dp"
+        android:layout_marginStart="16dp"
+        android:src="@drawable/ic_musiconbutton"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@id/strawberry_button"
+        app:layout_constraintStart_toEndOf="@id/watermelon_button"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageView
+        android:id="@+id/vibrate_button"
+        android:layout_width="42dp"
+        android:visibility="invisible"
+        android:layout_height="42dp"
+        android:layout_marginStart="16dp"
+        android:src="@drawable/ic_vibrateonbutton"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@id/orange_button"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageView
+        android:id="@+id/sound_button"
+        android:layout_width="42dp"
+        android:visibility="invisible"
+        android:layout_height="42dp"
+        android:src="@drawable/ic_soundonmusic"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/orange_button"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageView
+        android:id="@+id/pause_button"
+        android:layout_width="31dp"
+        android:layout_height="31dp"
+        android:src="@drawable/ic_buttonpause"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.902"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.041" />
+
+    <ImageView
+        android:id="@+id/setting_button"
+        android:layout_width="31dp"
+        android:layout_height="31dp"
+        android:src="@drawable/ic_buttonsettings"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.902"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.041" />
+
+    <TextView
+        android:id="@+id/best_score_text"
+        android:layout_width="wrap_content"
+        android:layout_height="17dp"
+        android:text="Best score"
+        android:textColor="@color/colorOfText"
+        android:textSize="15dp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.05"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.041" />
+
+    <TextView
+        android:id="@+id/score_text"
+        android:layout_width="wrap_content"
+        android:layout_height="17dp"
+        android:text="Score"
+        android:textColor="@color/colorOfText"
+        android:textSize="15dp"
+        android:textStyle="bold"
+        android:visibility="invisible"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.128"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.04" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="17dp"
+        android:text="50"
+        android:textColor="@color/colorOfText"
+        android:textSize="15dp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.05"
+        app:layout_constraintStart_toEndOf="@+id/score_text"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.041" />
+
+    <TextView
+        android:visibility="invisible"
+        android:id="@+id/timer"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="36dp"
+        android:text="01:00"
+        android:textColor="#FFF"
+        android:textSize="35dp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.487"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:visibility="invisible"
+        android:id="@+id/score_best_lose_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Best score"
+        android:textColor="@color/colorOfText"
+        android:textSize="25dp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.468"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.147" />
+
+    <TextView
+        android:id="@+id/score_lose_numbers"
+        android:layout_width="wrap_content"
+        android:visibility="invisible"
+        android:layout_height="17dp"
+        android:text="50"
+        android:textColor="@color/colorOfText"
+        android:textSize="15dp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.031"
+        app:layout_constraintStart_toEndOf="@id/guideline"
+        app:layout_constraintTop_toBottomOf="@id/score_best_lose_text"
+        app:layout_constraintVertical_bias="0.043" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guideline"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_begin="205dp" />
+
+    <TextView
+        android:id="@+id/score_lose_text"
+        android:visibility="invisible"
+        android:layout_width="wrap_content"
+        android:layout_height="17dp"
+        android:text="Score"
+        android:textColor="@color/colorOfText"
+        android:textSize="15dp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@id/guideline"
+        app:layout_constraintHorizontal_bias="0.958"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/score_best_lose_text"
+        app:layout_constraintVertical_bias="0.043" />
+
+
+
+    <ImageView
+        android:id="@+id/eat_fruit"
+        android:visibility="invisible"
+        android:layout_width="55dp"
+        android:layout_height="55dp"
+        android:src="@drawable/watermellon_picture"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.668"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.353" />
+
+    <ImageView
+        android:visibility="invisible"
+        android:id="@+id/tongue"
+        android:layout_width="24dp"
+        android:layout_height="15dp"
+        android:src="@drawable/ic_tongue"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.565"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.389" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
