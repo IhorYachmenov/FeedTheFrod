@@ -119,16 +119,15 @@
 
         <ImageView
             android:id="@+id/play_main_button"
-
             android:layout_width="218dp"
             android:layout_height="52.22dp"
-            android:src="@drawable/ic_buttonmenu"
+            android:src="@drawable/ic_buttonplay"
+            android:visibility="@{viewModel.getState == false ? View.VISIBLE : View.GONE}"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toTopOf="parent"
             app:layout_constraintVertical_bias="0.893" />
-
 
         <ImageView
             android:id="@+id/button_play"
@@ -215,6 +214,7 @@
             android:id="@+id/setting_button"
             android:layout_width="31dp"
             android:layout_height="31dp"
+            android:onClick="@{() -> viewModel.resetState()}"
             android:src="@drawable/ic_buttonsettings"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
